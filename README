@@ -3,3 +3,26 @@ with not mocha lib
 
 
 why not uploaded to github
+
+
+总结：
+1：如何配置基本属性
+git config --global user.name "huayun zhang"
+git config --global user.email huayun321@gmail.com
+
+git config --global core.editor gedit
+
+
+2:添加.gitignore
+添加需要忽略的文件
+这个.gitignore文件是要自己创建的
+
+3：如何在git中删除文件
+	第一种情况：无缓存  已commit 在git 管理中
+		rm file
+		git rm file
+	第二种情况：有缓存 已commit 在git 管理中
+		rm file
+		git rm -f file
+	第三种情况：移除跟踪 但不删除文件  以便稍后在.gitignore文件中补上
+		git rm --cached file
