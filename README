@@ -26,3 +26,8 @@ git config --global core.editor gedit
 		git rm -f file
 	第三种情况：移除跟踪 但不删除文件  以便稍后在.gitignore文件中补上
 		git rm --cached file
+
+
+4:移动文件 重命名文件 mv
+
+	git mv oldfile new file
