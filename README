@@ -31,3 +31,27 @@ git config --global core.editor gedit
 4:移动文件 重命名文件 mv
 
 	git mv oldfile new file
+
+
+
+5:查看历史记录
+	git log 
+	git log -p 2
+		显示最近两次
+	git log --stat
+		显示简要的增减行数
+	git log --pretty=oneline short full fuller
+	git log --pretty=format:"%h - %an, %ar : %s"
+
+6:限制输出长度
+	git log --since=2.weeks
+
+
+7:图像化工具查看提交历史
+	gitk
+
+
+
+8:撤销操作
+
+	
